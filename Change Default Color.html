@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Primary Color Change</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Override the default primary color in Bootstrap */
+        :root {
+            --bs-primary: red;
+            /* Custom primary color */
+        }
+
+        /* Ensure the changes apply to Bootstrap components */
+        .btn-primary {
+            /* Use custom primary color for background */
+            background-color: var(--bs-primary);
+            /* Use custom primary color for border */
+            border-color: var(--bs-primary);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <!-- Example Bootstrap button with primary color -->
+        <button type="button" class="btn btn-primary">Primary Button</button>
+    </div>
+
+</body>
+
+</html>

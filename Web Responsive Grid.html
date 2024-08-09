@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Example</title>
+
+    <!-- A web responsive grid is a layout system that allows web pages to adapt to different screen sizes and orientations. -->
+
+    <style>
+        /* Style the body to center the container both horizontally and vertically */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Define the container as a grid */
+        .container {
+            display: grid;
+            /* Create columns that automatically fit and resize based on screen size */
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+            /* Space between grid items */
+            width: 90%;
+            max-width: 1200px;
+            /* Maximum width of the container */
+            margin: 0 auto;
+            /* Center the container horizontally */
+        }
+
+        /* Style each grid item */
+        .item {
+            background-color: #4CAF50;
+            /* Background color */
+            color: white;
+            /* Text color */
+            padding: 20px;
+            /* Internal spacing */
+            text-align: center;
+            /* Center the text */
+            border-radius: 5px;
+            /* Rounded corners */
+        }
+
+        .item:hover {
+            box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+            transform: translateY(-3px) scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Container div holds the grid items -->
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+
+</html>
